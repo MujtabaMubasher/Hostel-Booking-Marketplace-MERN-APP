@@ -1,0 +1,10 @@
+.bannerImg > img{
+ width: 30vmax;
+ margin-top: 8vmax;
+ margin-right: 2vmax;
+}
+.bannerImg2 > img{
+ width: 30vmax;
+ /* margin-top: 8vmax; */
+ margin-right: 2vmax;
+}
