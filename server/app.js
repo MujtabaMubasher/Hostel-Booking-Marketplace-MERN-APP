@@ -5,7 +5,7 @@ const bcryptjs = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const fetch = require("node-fetch");
-const stripe = require('stripe')('sk_test_51JN4dxHOzHyuclVjR6fAwro5gtVcQ7ivWzAjyy5t49qrGs6AjkitlKAi4eokJZq2iQpgPyuQu4VmT4svAOVwwmHr00msVjw6Rq');
+const stripe = require('stripe')('');
 
 const app = express();
 
@@ -31,7 +31,7 @@ const port = process.env.PORT || 8000;
 
 async function geocodeAddress(address) {
   const encodedAddress = encodeURIComponent(address);
-  const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=AIzaSyAhlgBgN3ms27MOv0AGJG7hTTTwUp7a1yk`;
+  const geocodeUrl = ``;
 
   try {
     const response = await fetch(geocodeUrl);
